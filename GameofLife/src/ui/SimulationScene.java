@@ -14,7 +14,6 @@ import javafx.scene.shape.Rectangle;
 
 public class SimulationScene {
 	private int[][] currentGeneration;
-	//private Cell[][] cellArray;
 	private Rectangle[][] cellGUIArray;
 	private Simulation simulation;
 	private SettingsScene settingsScene;
@@ -29,7 +28,6 @@ public class SimulationScene {
 	
 	public SimulationScene(int[][] currentGeneration, Rectangle[][] cellGUIArray, Simulation simulation, SettingsScene settingsScene, boolean play, int columns, int rows, int widthOfCells, int heightOfCells) {
 		this.currentGeneration = currentGeneration;
-		//this.cellArray = new Cell[columns][rows];
 		this.cellGUIArray = cellGUIArray;
 		this.simulation = simulation;
 		this.settingsScene = settingsScene;
@@ -58,9 +56,6 @@ public class SimulationScene {
 		
 		for (int x = 0; x < this.columns; x++) {
 			for (int y = 0; y < this.rows; y++) {
-				//Cell cell = new Cell(widthOfCells, heightOfCells, x, y); <-- Not yet supported
-				//this.cellArray[x][y] = cell;
-				
 				Rectangle cellGUI = new Rectangle(this.widthOfCells - 1, this.heightOfCells - 1);
 				cellGUI.setFill(Color.web("#FFFFFF"));		// White cell background color
                 cellGUI.setStroke(Color.web("#C0C0C0")); 	// Grey cell border color

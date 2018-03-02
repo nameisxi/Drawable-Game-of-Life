@@ -64,7 +64,7 @@ public class Simulation {
                             numberOfNeighbours += this.currentGeneration[x + i][y + j];
                         }
                     }
-                    // Excluding current cell from previous calculation
+                    // Excludes current cell from previous calculation
                     numberOfNeighbours -= this.currentGeneration[x][y];
 
                     int max = 100;

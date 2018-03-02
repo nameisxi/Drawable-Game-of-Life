@@ -16,7 +16,6 @@ import ui.SimulationScene;
 public class GameOfLife extends Application {
 
 	private int[][] currentGeneration;
-	//private Cell[][] cellArray; <-- Feature not ready yet
 	private Rectangle[][] cellGUIArray;
 	private Simulation simulation;
 	private SimulationScene simulationScene;
@@ -60,7 +59,6 @@ public class GameOfLife extends Application {
 				
 					simulation = new Simulation(columns, rows);
 					currentGeneration = simulation.getCurrentGeneration();
-					// this.cellArray = new Cell[columns][rows];
 					cellGUIArray = new Rectangle[columns][rows];
 					play = false;
 
