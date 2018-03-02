@@ -46,7 +46,7 @@ public class GameOfLife extends Application {
 		this.simulationSceneLayout = null;
 
 		new AnimationTimer() {
-			private long sleepNanoseconds = 30 * 1000000; // Original value: 200 * 1000000, and after that it was 50 * 1000000
+			private long sleepNanoseconds = 30 * 1000000; // Original value: 200 * 1000000
 			private long previousTime = 0;
 
 			@Override
